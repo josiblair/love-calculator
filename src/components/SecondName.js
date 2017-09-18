@@ -6,7 +6,7 @@ class SecondName extends Component {
     render() {
         return (
             <div>
-                <h4>Name Two:</h4>
+                <h4 class="inputName">Name Two:</h4>
                 <input  onChange={(e) => { this.props.updateNameTwo(e.target.value)} } />
             </div>
         )

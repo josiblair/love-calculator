@@ -7,6 +7,7 @@ import RandomQuotes from './components/RandomQuotes';
 
 import mainLogo from './header.png';
 
+
 class App extends Component {
   constructor() {
     super();
@@ -38,7 +39,7 @@ class App extends Component {
       <div className="App">
         
         <div className="header">
-          <img src={mainLogo} alt='The Love Calculator' />
+          <img src={mainLogo} alt='The Love Calculator' /> 
             <p className="intro-text">So, does she really have a crush on you? Is he husband material, or just a boy toy? What are my chances with Megan Fox? These are all important, potentially life changing, questions that we can help you understand. And remember, there is no better predictor of successful relationships than a compatibility score.</p>
         </div>
         

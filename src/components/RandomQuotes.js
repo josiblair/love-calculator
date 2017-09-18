@@ -15,10 +15,10 @@ class RandomQuotes extends Component {
     }
 
     randomQuote() {
-        let baseURL="https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en"
+        let baseURL="http://localhost:4000/api/getquotes" 
         axios.get(baseURL).then(response => { 
             this.setState({ 
-                quote: response.data.quoteText
+                quote: response.data
             }) 
         })
     }
@@ -26,7 +26,7 @@ class RandomQuotes extends Component {
     render() {
         return (
             <div>
-                <button className="quoteButton" onClick={() => this.randomQuote() }>Get Quote of the Day Here!</button>
+                <button className="quoteButton" onClick={() => this.randomQuote() }>Get the Quote of the Day Here!</button>
                 <p className="quote"><img src={quotation} alt="" />{ this.state.quote }<img src={quotation} alt="" /></p>
             </div>
         )
