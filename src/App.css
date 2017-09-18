@@ -1,0 +1,138 @@
+body {
+  background-color: pink;
+  background: radial-gradient(crimson, lightpink);
+}
+.App {
+  text-align: center;
+  padding: 100px;
+  font-family: 'Comic Sans MS'
+}
+
+.header {
+  overflow: hidden;
+}
+
+@keyframes fade-in {
+  from {
+    font-size: 0px;
+  }
+
+  to {
+   font-size: 22px;
+  }
+}
+
+.intro-text { 
+  font-size: 22px;
+  width: 75vw;
+  margin: auto;
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+
+input {
+  background: radial-gradient(crimson, lightpink);
+  border: 3px white dotted;
+  border-radius: 10px;
+  height: 25px;
+  width: 175px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.names {
+  width: 370px;
+  text-align: center;
+  font-size: 23px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+ 
+.calculateButton {
+  text-align: center;
+  background-color: crimson;
+  border: 2px white solid;
+  border-radius: 10px;
+  height: 41px;
+  width: 130px;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: 'Comic Sans MS';
+  margin: 37px 0px;
+ }
+
+.calculateButton:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+.compatScore {
+  font-size: 80px;
+  font-weight: bold;
+  animation-name: opacity;
+  animation-duration: 3s;
+ }
+
+ @keyframes opacity {
+  from {font-size: 0;}
+  to {font-size: 80px;}
+}
+
+ .quoteButton {
+  height: 35px;
+  background-color: crimson;
+  width: 300px;
+  border: 2px white solid;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+ }
+
+ .quoteButton:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+ }
+
+ .quote {
+   font-size: 25px;
+ }
+
+ .displayCompat {
+   border: 3px white dotted;
+   font-size: 20px;
+   width: 30vw;
+   margin: auto auto 40px;
+ }
